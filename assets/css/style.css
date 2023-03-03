@@ -358,7 +358,7 @@ body {
 }
 
 .about {
-    padding-top: 13%;
+    padding-top: 150px;
   /*   &__box{
       padding-top: 30px;
     } */
@@ -413,7 +413,7 @@ body {
 }
 
 .projects {
-    padding: 13% 0;
+    padding: 150px 0;
 }
 
 .projects__link {
@@ -478,7 +478,7 @@ body {
 }
 
 .services {
-    padding: 13% 0;
+    padding: 150px 0;
     background: #121212;
 }
 
@@ -541,7 +541,7 @@ body {
 }
 
 .contacts {
-    padding: 13% 0;
+    padding: 150px 0;
 }
 
 .contacts__inner {
