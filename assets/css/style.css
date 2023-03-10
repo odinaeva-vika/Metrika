@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
     font-family: "Manrope Regular";
   src: url("../fonts/rubik/Manrope-Regular.eot");
@@ -114,8 +116,12 @@ legend {
     display: block;
 }
 
+html,
 body {
     height: 100%;
+}
+
+body {
     color: #121212;
     font-family: "Manrope Regular", sans-serif;
     font-style: normal;
@@ -373,9 +379,6 @@ body {
 
 .about {
     padding-top: 150px;
-  /*   &__box{
-      padding-top: 30px;
-    } */
 }
 
 .about__wrapper {
@@ -397,17 +400,15 @@ body {
 }
 
 .about__btn {
-    display: block;
-    width: 255px;
-    height: 67px;
-    text-align: center;
+    display: inline-block;
+    padding: 20px 40px;
     border-radius: 5px;
-    background: #AD1818;
+    background-color: #AD1818;
+    color: #FFFFFF;
     border: 1px solid #AD1818;
     font-size: 20px;
-    line-height: 60px;
+    line-height: 27px;
     letter-spacing: -0.03em;
-    color: #FFFFFF;
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
