@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230326172259">
-  <title>Главная</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20230330061729">
+  <title>Метрика</title>
 </head>
 <body>
   <div class="wrapper">
@@ -32,9 +32,8 @@
         <div class="container">
           <div class="main-top__inner">
             <div class="main-top__box-title">
-              <h1 class="main-top__title">Современные и стильные <br>интерьеры для комфортной жизни</h1>
+              <h1 class="main-top__title">Современные и стильные интерьеры для комфортной жизни</h1>
             </div>
-            <picture><source srcset="img/top.webp" type="image/webp"><img src="img/top.jpg" alt="Интерьер"></picture>
             <div class="main-top__box-description">
               <p class="main-top__description">Мы - команда квалифицированных дизайнеров и архитекторов, занимающихся
                 разработкой и
@@ -168,7 +167,7 @@
         </div>
       </section>
     
-      <section class="projects-fluid">
+      <section style="display: none;" class="projects-fluid">
         <div class="container">
           <h2 class="projects-fluid__title">галерея проектов</h2>
         </div>
@@ -177,7 +176,13 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide popular-slide">
                   <div class="popular-slide__thumb">
-                    <picture><source srcset="img/projects-fluid.webp" type="image/webp"><img class="popular-slide__img popular-slide__img-item1" src="img/projects-fluid.jpg" alt="Спальня"></picture>
+                    <!-- <picture><source srcset="img/projects-fluid.webp" type="image/webp"><img class="popular-slide__img popular-slide__img-item1" src="img/projects-fluid.jpg" alt="Спальня"></picture> -->
+                    <picture>
+                      <source srcset="img/projects-fluid.jpg" type="image/jpeg" media="(min-width:1400px)">
+                      <source srcset="img/projects-fluid.jpg" type="image/jpeg" media="(min-width:961px)">
+                      <source srcset="img/projects-fluid.jpg" type="image/jpeg" media="(max-width:375px)">
+                      <img src="img/projects-fluid.jpg" alt="">
+                    </picture>
                   </div>
                   <div class="popular-slide__text">
                     <h3 class="popular-slide__title">Проект Двухкомнатной <br>квартиры в ЖК Лесной Пейзаж</h3>
@@ -244,7 +249,7 @@
   </div>
 </footer>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230326172259"></script>
-  <script src="js/app.min.js?_v=20230326172259"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230330061729"></script>
+  <script src="js/app.min.js?_v=20230330061729"></script>
 </body>
 </html>
