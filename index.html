@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230331152101">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230404041215">
   <title>Метрика</title>
 </head>
 <body>
@@ -58,8 +58,8 @@
         </div>
       </section>
     
-      <section class="projects project">
-        <div class="container" id="projects">
+      <section class="projects project" id="projects">
+        <div class="container">
           <h2 class="title">проекты</h2>
           <div class="project__box">
             <div class="project__box-img">
@@ -166,63 +166,55 @@
           </ul>
         </div>
       </section>
-    
-      <section style="display: none;" class="projects-fluid">
-        <div class="container">
-          <h2 class="projects-fluid__title">галерея проектов</h2>
-        </div>
-          <div class="popular__slider">
-            <div class="swiper popular-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide popular-slide">
-                  <div class="popular-slide__thumb">
-                    <!-- <picture><source srcset="img/projects-fluid.webp" type="image/webp"><img class="popular-slide__img popular-slide__img-item1" src="img/projects-fluid.jpg" alt="Спальня"></picture> -->
-                    <picture>
-                      <source srcset="img/projects-fluid.jpg" type="image/jpeg" media="(min-width:1400px)">
-                      <source srcset="img/projects-fluid.jpg" type="image/jpeg" media="(min-width:961px)">
-                      <source srcset="img/projects-fluid.jpg" type="image/jpeg" media="(max-width:375px)">
-                      <img src="img/projects-fluid.jpg" alt="">
-                    </picture>
-                  </div>
-                  <div class="popular-slide__text">
-                    <h3 class="popular-slide__title">Проект Двухкомнатной <br>квартиры в ЖК Лесной Пейзаж</h3>
-                  </div>
-                </div>
-          
-                <div class="swiper-slide popular-slide">
-                  <div class="popular-slide__thumb">
-                    <picture><source srcset="img/projects-fluid2.webp" type="image/webp"><img class="popular-slide__img popular-slide__img-item2" src="img/projects-fluid2.jpg" alt=""></picture>
-                  </div>
-                  <div class="popular-slide__text">
-                    <h3 class="popular-slide__title">Проект Двухкомнатной <br>квартиры в ЖК Лесной Пейзаж</h3>
-                  </div>
-                </div>
-          
-                <div class="swiper-slide popular-slide">
-                  <div class="popular-slide__thumb">
-                    <picture><source srcset="img/projects-fluid3.webp" type="image/webp"><img class="popular-slide__img popular-slide__img-item3" src="img/projects-fluid3.jpg" alt="Спальня"></picture>
-                  </div>
-                  <div class="popular-slide__text">
-                    <h3 class="popular-slide__title">Проект Двухкомнатной <br>квартиры в ЖК Лесной Пейзаж</h3>
-                  </div>
-                </div>
 
-                <div class="swiper-slide popular-slide">
-                  <div class="popular-slide__thumb">
-                    <picture><source srcset="img/projects-fluid4.webp" type="image/webp"><img class="popular-slide__img popular-slide__img-item4" src="img/projects-fluid4.jpg" alt=""></picture>
-                  </div>
-                  <div class="popular-slide__text">
-                    <h3 class="popular-slide__title">Проект Двухкомнатной <br>квартиры в ЖК Лесной Пейзаж</h3>
-                  </div>
-                </div>
-          
+      <section class="gallery">
+        <div class="gallery__title-wrapper">
+          <div class="container">
+            <h2 class="gallery__title">галерея проектов</h2>
+          </div>
+        </div>
+        <div class="gallery__slides">
+          <div class="gallery__slide gallery__slide_active">
+            <picture><source srcset="img/projects-fluid.webp" type="image/webp"><img class="slide__img-item1" src="img/projects-fluid.jpg" alt="Спальня"></picture>
+            <div class="gallery__content">
+              <div class="container">
+                <h3 class="gallery__content-text">Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж</h3>
               </div>
             </div>
-            <div class="slider-buttons">
-              <div class="popular-slider-btn swiper-button-prev"></div>
-              <div class="popular-slider-btn swiper-button-next"></div>
+          </div>
+          <div class="gallery__slide">
+            <picture><source srcset="img/projects-fluid2.webp" type="image/webp"><img class="slide__img-item2" src="img/projects-fluid2.jpg" alt="Спальня"></picture>
+            <div class="gallery__content">
+              <div class="container">
+                <h3 class="gallery__content-text">Проект гостиной в ЖК Маяк</h3>
+              </div>
             </div>
           </div>
+          <div class="gallery__slide">
+            <picture><source srcset="img/projects-fluid3.webp" type="image/webp"><img class="slide__img-item3" src="img/projects-fluid3.jpg" alt="Спальня"></picture>
+            <div class="gallery__content">
+              <div class="container">
+                <h3 class="gallery__content-text">Визуализация кухни-гостиной в частном доме</h3>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__slide">
+            <picture><source srcset="img/projects-fluid4.webp" type="image/webp"><img class="slide__img-item4" src="img/projects-fluid4.jpg" alt="Кухня"></picture>
+            <div class="gallery__content">
+              <div class="container">
+                <h3 class="gallery__content-text">Проект кухни в скандинавском стиле для ЖК Северный Ветер</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__controls-wrapper">
+          <div class="container">
+            <div class="gallery__controls">
+              <button class="gallery__control-prev"></button>
+              <button class="gallery__control-next"></button>
+            </div>
+          </div>
+        </div>
       </section>
     
       <section class="contacts" id="contacts">
@@ -249,7 +241,7 @@
   </div>
 </footer>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230331152101"></script>
-  <script src="js/app.min.js?_v=20230331152101"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230404041215"></script>
+  <script src="js/app.min.js?_v=20230404041215"></script>
 </body>
 </html>
