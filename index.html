@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230417094706">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230616222211">
   <title>Метрика</title>
 </head>
 <body>
@@ -133,6 +133,157 @@
             </div>
           </div>
           <button class="services__link js-btn">Заказать услугу</button>
+        </div>
+      </section>
+
+      <section class="calculator">
+        <div class="container">
+          <div class="calculator__inner">
+            <div class="calculator__container">
+              <h2 class="calculator__title">Калькулятор стоимости ремонта</h2>
+              <div class="calculator__box">
+                <div class="calculator__wrapper">
+                  <div class="calculator__box-text">
+                    <p class="calculator__text">выберите тип помещения</p>
+                    <p class="calculator__text">укажите метраж помещения</p>
+                  </div>
+                  <div class="calculator__box-options">
+                    <select class="calc-select" name="" id="">
+                      <option value="квартира">квартира</option>
+                      <option value="комната">комната</option>
+                      <option value="дом">дом</option>
+                    </select>
+                    <div class="range">
+                      <span class="range__number" id="output-range"></span>
+                      <span class="range__text">м<sup>2</sup></span>
+                      <input type="range" min="1" max="300" value="44" class="range__input" id="range">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="calculator__box">
+                <h3 class="calc__title">состав дизайн-проекта</h3>
+                <div class="calculator-сomposition">
+                  <div class="calculator-сomposition__box">
+                    <p class="calculator__text">планировочные решения</p>
+                    <p class="calculator__text">варианты чертежей</p>
+                    <p class="calculator__text">варианты визуализаций</p>
+                  </div>
+                  <div id="calcBtn" class="calculator-сomposition__buttons calculator__text-red">
+                    <div class="calculator-сomposition__wrapper">
+                      <button class="calc-minus" type="button">-</button>
+                      <span class="calc-quantity">1</span>
+                      <button class="calc-plus" type="button">+</button>
+                    </div>
+                    <div class="calculator-сomposition__wrapper">
+                      <button class="calc-minus" type="button">-</button>
+                      <span class="calc-quantity">1</span>
+                      <button class="calc-plus" type="button">+</button>
+                    </div>
+                    <div class="calculator-сomposition__wrapper">
+                      <button class="calc-minus" type="button">-</button>
+                      <span class="calc-quantity">1</span>
+                      <button class="calc-plus" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="calculator__box">
+                <h3 class="calc__title">что понадобится в дизайн проекте</h3>
+                <div id="calculatorDesign" class="calculator-design">
+                  <div class="calculator-design__text">3D визуализация</div>
+                  <div class="calculator-design__text">чертежи (рабочая документация)</div>
+                  <div class="calculator-design__text">планировочное решение</div>
+                  <div class="calculator-design__text">ведомости (шопинг-лист)</div>
+                  <div class="calculator-design__text">товары со скидкой</div>
+                  <div class="calculator-design__text">смета на ремонт</div>
+                  <div class="calculator-design__text">мебель на заказ</div>
+                </div>
+              </div>
+              
+              <div class="calculator__box">
+                <h3 class="calc__title">дополнительные услуги</h3>
+                <p class="calc__description">оплачиваются отдельно и не входят в состав проекта</p>
+                <div id="additional" class="additional-services">
+                  <div data-name="умный дом" class="additional-services__box">
+                    <label>
+                      <input type='checkbox'>
+                      <span></span>
+                      умный дом
+                    </label>
+                    <p><span data-sum>30 000</span>₽</p>
+                  </div>
+              
+                  <div data-name="технический надзор" class="additional-services__box">
+                    <label>
+                      <input type='checkbox'>
+                      <span></span>
+                      технический надзор
+                    </label>
+                    <p><span data-sum>20 000</span>₽</p>
+                  </div>
+              
+                  <div data-name="авторский надзор" class="additional-services__box">
+                    <label>
+                      <input type='checkbox'>
+                      <span></span>
+                      авторский надзор
+                    </label>
+                    <p><span data-sum>25 000</span>₽</p>
+                  </div>
+              
+                  <div data-name="3D тур по визуализациям проекта" class="additional-services__box">
+                    <label>
+                      <input type='checkbox'>
+                      <span></span>
+                      3D тур по визуализациям проекта
+                    </label>
+                    <p><span data-sum>4 000</span>₽</p>
+                  </div>
+              
+                  <div data-name="дизайн-проект дополнительного помещения" class="additional-services__box">
+                    <label>
+                      <input type='checkbox'>
+                      <span></span>
+                      дизайн-проект дополнительного помещения
+                    </label>
+                    <p><span data-sum>20 000</span>₽</p>
+                  </div>
+              
+                  <div data-name="дизайн-проект лоджии" class="additional-services__box">
+                    <label>
+                      <input type='checkbox'>
+                      <span></span>
+                      дизайн-проект лоджии
+                    </label>
+                    <p><span data-sum>10 000</span>₽</p>
+                  </div>
+              
+                  <div data-name="дизайн-проект гардеробной комнаты" class="additional-services__box">
+                    <label>
+                      <input type='checkbox'>
+                      <span></span>
+                      дизайн-проект гардеробной комнаты
+                    </label>
+                    <p><span data-sum>10 000</span>₽</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-sticky">
+              <div class="calc-sticky__box-item1">
+                <p class="calc-sticky__title">стоимость проекта</p>
+                <p class="calc-sticky__price"><span id="amount-project">44 000</span>₽</p>
+              </div>
+              <div class="calc-sticky__box-item2">
+                <p class="calc-sticky__description"><span id="amount-square-meter">1000</span>₽/м2</p>
+                <span class="calc-sticky__text">35-45 дней</span>
+              </div>
+              <button class="calc-sticky__btn">Заказать проект</button>
+            </div>
+          </div>
         </div>
       </section>
     
@@ -276,6 +427,6 @@
   </div>
 </footer>
   </div>
-  <script src="js/app.min.js?_v=20230417094706"></script>
+  <script src="js/app.min.js?_v=20230616222211"></script>
 </body>
 </html>
